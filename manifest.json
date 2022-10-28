@@ -3,16 +3,11 @@
   "author": "ryoichi-u",
   "description": "chrome extension for customize CSS and JS.",
   "version": "0.0.1",
-  "manifest_version": 2,
-  "web_accessible_resources": ["*"],
+  "manifest_version": 3,
   "permissions": ["storage"],
   "content_scripts": [
     {
-      "matches": ["https://www.google.co.jp/*"],
-      "css": ["google/style.css"],"js": ["jquery.min.js","google/script.js"]
-    },
-    {
-      "matches": ["http://*cybozu.com/k/296/*"],
+      "matches": ["*://*.cybozu.com/k/296/*"],
       "css": ["cybozu/style.css"],"js": ["cybozu/script.js"]
     }
   ]
