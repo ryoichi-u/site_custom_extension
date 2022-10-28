@@ -3,3 +3,6 @@
 .subtable-row-gaia { 
   width: max-content; 
 }
+.subtable-row-gaia td {
+  font-size: 11px;
+}
