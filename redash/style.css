@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+.edit-in-place.active input {
+  width: 500px;
+}
