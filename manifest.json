@@ -2,13 +2,17 @@
   "name": "chrome-stylize",
   "author": "ryoichi-u",
   "description": "chrome extension for customize CSS and JS.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "manifest_version": 3,
   "permissions": ["storage"],
   "content_scripts": [
     {
       "matches": ["*://*.cybozu.com/k/296/*"],
       "css": ["cybozu/style.css"],"js": ["cybozu/script.js"]
+    }
+    ,{
+      "matches": ["*://*/queries/*"],
+      "css": ["redash/style.css"],"js": ["cybozu/script.js"]
     }
   ]
 }
